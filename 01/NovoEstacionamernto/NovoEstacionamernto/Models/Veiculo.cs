@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NovoEstacionamernto.Models
+﻿namespace NovoEstacionamernto.Models
 {
     internal class Veiculo
     {
@@ -12,7 +6,12 @@ namespace NovoEstacionamernto.Models
         public int ClienteId { get; set; }
         public string Placa { get; set; }
         public string Modelo { get; set; }
-        public string Cor { get; set; }
+        public string Cores { get; set; }
+
+
+        // Propriedade de navegação para o Cliente
+
+        public Cliente Cliente { get; set; }
 
     }
 }
